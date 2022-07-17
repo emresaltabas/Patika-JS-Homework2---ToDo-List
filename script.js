@@ -39,7 +39,7 @@ for(let i=0; i<liCurrent.length; i++){
 
 //"Onclick" metoduyla, yeni "li" ekleyen, "yapıldı" classını aktif eden, "X" ikonu ekleyen, "X" tıklandığında itemı silen fonksiyon
 function newElement(){
-    if(input.value.length > 0 && input.value[0]!==" "){
+    if(input.value.trim().length > 0){
         $(".success").toast("show");//Başarılı ekleme yapıldığında olumlu toast devreye giriyor.
         let li=document.createElement("li");
         li.textContent=input.value;
